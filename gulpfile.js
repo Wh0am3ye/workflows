@@ -35,7 +35,7 @@ gulp.task('compass', function() {
       sass: 'components/sass',
       image: 'builds/development/images',
       style: 'expanded'
-    }))
-    .on('error', gutil.log)
+    })
+    .on('error', gutil.log))
     .pipe(gulp.dest('builds/development/css'))
 });
